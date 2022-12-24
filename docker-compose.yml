@@ -13,9 +13,9 @@ services:
       - onlyoffice
     volumes:
       - app_data:/var/www/html
-  onlyoffice-document-server:
+  onlyoffice-document-server
     container_name: onlyoffice-document-server
-    image: onlyoffice/documentserver:7.1
+    image: onlyoffice/documentserver:7.1.1
     stdin_open: true
     tty: true
     restart: always
